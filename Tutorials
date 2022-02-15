@@ -1,0 +1,30 @@
+ //Destructuring objects 
+ 
+ let personalInformation = {
+     'firstname' : 'sneha',
+   'lastname' :'thomas' ,
+   'age' : 30
+ };
+
+ const{firstname:fn,lastname:ln} = personalInformation
+ console.log(`${fn} ${ln}`);
+ 
+ //Destructuring arrays 
+
+let [firstName,middleName,lastName] = ['sneha' ,'mariam','thomas']
+lastName = 'joseph'
+
+console.log(lastName)
+
+//Object literal
+function addressMaker(address){
+    const {city,state} = address
+    
+    const newAddress = {
+        city,
+        state
+    };
+    
+    console.log(`${newAddress.city},${newAddress.state}`)
+}
+addressMaker({city: 'Austin', state: 'Texas'});
