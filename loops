@@ -1,0 +1,17 @@
+// for loop for printing odd and even numbers 
+
+var myOddArray = []
+var myEvenArray = []
+
+for (var i = 1;i < 10 ; i += 2){
+    myOddArray.push(i)
+}
+
+for (var i = 0 ; i < 10 ; i +=2){
+    myEvenArray.push(i);
+}
+alert(myOddArray);
+alert(myEvenArray);
+
+******************************** **************************************************************
+
